@@ -72,8 +72,9 @@ def main(args):
 
     # Export des liens
     with open("liste_urls.csv", 'w') as file:
-        wr = csv.writer(file, quoting=csv.QUOTE_ALL)
-        wr.writerow(urls)
+        for row in urls:
+            file.write(row)
+            file.write("\n")
     print("Temps d'exécution : %.2f secondes" % (time.time() - temps_debut))
 
 
