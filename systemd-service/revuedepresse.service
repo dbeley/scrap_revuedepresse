@@ -1,0 +1,9 @@
+[Unit]
+Description=revuedepresse scraping
+
+[Service]
+Type=oneshot
+ExecStart=scrap_revuedepresse
+
+[Install]
+WantedBy=multi-user.target

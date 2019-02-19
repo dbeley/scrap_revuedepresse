@@ -1,0 +1,10 @@
+[Unit]
+Description=Run the revuedepresse script daily
+
+[Timer]
+#OnBootSec=15min
+#OnUnitActiveSec=1d
+OnCalendar=*-*-* 09:00:00
+
+[Install]
+WantedBy=timers.target

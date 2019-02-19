@@ -7,13 +7,13 @@ import os
 import errno
 import logging
 import argparse
-import csv
 
 logger = logging.getLogger()
 temps_debut = time.time()
 
 
-def main(args):
+def main():
+    args = parse_args()
     url_base = "http://www.revue2presse.fr"
     url_depart = url_base + "/presse/quotidien"
     html_doc = requests.get(url_depart).content
@@ -58,7 +58,7 @@ def main(args):
                         if img['alt'] not in blacklist:
                             logger.info(f"{img['alt']}")
                             lien_img = url_base + img['src']
-                            filename = auj + "/" + img['alt'] + ".jpg"
+                            filename = "scrap_revuedepresse/" + auj + "/" + img['alt'] + ".jpg"
                             if not os.path.exists(os.path.dirname(filename)):
                                 try:
                                     os.makedirs(os.path.dirname(filename))
@@ -71,7 +71,7 @@ def main(args):
                             logger.warning(f"{img['alt']} est blacklisté")
 
     # Export des liens
-    with open("liste_urls.csv", 'w') as file:
+    with open(f"scrap_revuedepresse/{auj}/liste_urls.csv", 'w') as file:
         for row in urls:
             file.write(row)
             file.write("\n")
@@ -88,4 +88,4 @@ def parse_args():
 
 
 if __name__ == '__main__':
-    main(parse_args())
+    main()

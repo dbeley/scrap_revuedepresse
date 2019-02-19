@@ -6,19 +6,22 @@ import errno
 import logging
 import argparse
 import csv
+import pkg_resources
+import codecs
 
 logger = logging.getLogger()
 temps_debut = time.time()
 
 
-def main(args):
-
+def main():
+    args = parse_args()
     urls = []
 
-    with open("liste_urls.csv", "r") as file:
-        reader = csv.reader(file)
-        for row in reader:
-            urls.append(row)
+    io = pkg_resources.resource_stream(__name__, "liste_urls.csv")
+    utf8_reader = codecs.getreader("utf-8")
+    c = csv.reader(utf8_reader(io))
+    for row in c:
+        urls.append(row)
 
     auj = datetime.datetime.now().strftime("%Y-%m-%d")
     logger.info(f"Ajourd'hui : {auj}")
@@ -27,7 +30,7 @@ def main(args):
 
     for lien in urls:
         logger.info(lien)
-        filename = auj + "/" + str(i) + ".jpg"
+        filename = "scrap_revuedepresse_simple/" + auj + "/" + str(i) + ".jpg"
         url = ''.join(lien)
         if not os.path.exists(os.path.dirname(filename)):
             try:
@@ -51,4 +54,4 @@ def parse_args():
 
 
 if __name__ == '__main__':
-    main(parse_args())
+    main()
