@@ -22,4 +22,8 @@ package() {
   cd "${pkgname%-git}"
   python setup.py install --prefix=/usr --root="$pkgdir/" --optimize=1 --skip-build
   install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+  install -Dm644 "$srcdir/${pkgname%-git}/systemd-service/revuedepresse.service" "$pkgdir/usr/lib/systemd/system/revuedepresse.service"
+  install -Dm644 "$srcdir/${pkgname%-git}/systemd-service/revuedepresse.timer" "$pkgdir/usr/lib/systemd/system/revuedepresse.timer"
+  install -Dm644 "$srcdir/${pkgname%-git}/systemd-service/revuedepresse_simple.service" "$pkgdir/usr/lib/systemd/system/revuedepresse_simple.service"
+  install -Dm644 "$srcdir/${pkgname%-git}/systemd-service/revuedepresse_simple.timer" "$pkgdir/usr/lib/systemd/system/revuedepresse_simple.timer"
 }
