@@ -3,7 +3,7 @@ Description=revuedepresse scraping (simple version)
 
 [Service]
 Type=oneshot
-WorkingDirectory=/home/david/
+WorkingDirectory=~
 ExecStart=scrap_revuedepresse_simple
 
 [Install]

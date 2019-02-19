@@ -3,6 +3,7 @@ Description=revuedepresse scraping
 
 [Service]
 Type=oneshot
+WorkingDirectory=~
 ExecStart=scrap_revuedepresse
 
 [Install]

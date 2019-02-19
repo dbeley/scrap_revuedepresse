@@ -1,10 +1,9 @@
 # scrap_revuedepresse
 
-
 ## Installation
 
 ```
-    pip install --user scrap_revuedepresse
+python setup.py install
 ```
 
 ## Usage
