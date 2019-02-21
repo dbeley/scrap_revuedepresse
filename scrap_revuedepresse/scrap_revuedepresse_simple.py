@@ -16,6 +16,9 @@ temps_debut = time.time()
 def main():
     args = parse_args()
     urls = []
+    auj = datetime.datetime.now().strftime("%Y-%m-%d")
+    logger.debug(f"Ajourd'hui : {auj}")
+    directory = f"{auj}/"
 
     io = pkg_resources.resource_stream(__name__, "liste_urls.csv")
     utf8_reader = codecs.getreader("utf-8")
@@ -23,14 +26,11 @@ def main():
     for row in c:
         urls.append(row)
 
-    auj = datetime.datetime.now().strftime("%Y-%m-%d")
-    logger.info(f"Ajourd'hui : {auj}")
-
     i = 1
 
     for lien in urls:
-        logger.info(lien)
-        filename = "scrap_revuedepresse_simple/" + auj + "/" + str(i) + ".jpg"
+        logger.debug(lien)
+        filename = f"{directory}{str(i).zfill(2)}.jpg"
         url = ''.join(lien)
         if not os.path.exists(os.path.dirname(filename)):
             try:
@@ -41,7 +41,7 @@ def main():
         urllib.request.urlretrieve(url, filename)
         i += 1
 
-    print("Temps d'exécution : %.2f secondes" % (time.time() - temps_debut))
+    logger.debug("Temps d'exécution : %.2f secondes" % (time.time() - temps_debut))
 
 
 def parse_args():

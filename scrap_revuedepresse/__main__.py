@@ -13,7 +13,10 @@ temps_debut = time.time()
 
 
 def main():
-    args = parse_args()
+    args =parse_args()
+    auj = datetime.datetime.now().strftime("%Y-%m-%d")
+    logger.debug(f"Ajourd'hui : {auj}")
+    directory = f"{auj}/"
     url_base = "http://www.revue2presse.fr"
     url_depart = url_base + "/presse/quotidien"
     html_doc = requests.get(url_depart).content
@@ -34,9 +37,6 @@ def main():
                  "Libération Champagne",
                  ]
 
-    auj = datetime.datetime.now().strftime("%Y-%m-%d")
-    logger.info(f"Ajourd'hui : {auj}")
-
     # url_depart
     for content in soup.find_all("div", {"id": "left-large-4"}):
         logger.debug(content)
@@ -56,9 +56,9 @@ def main():
                     for img in a.find_all("img", {"class": "cover"}):
                         logger.debug(img)
                         if img['alt'] not in blacklist:
-                            logger.info(f"{img['alt']}")
+                            logger.debug(f"{img['alt']}")
                             lien_img = url_base + img['src']
-                            filename = "scrap_revuedepresse/" + auj + "/" + img['alt'] + ".jpg"
+                            filename = f"{directory}{img['alt']}.jpg"
                             if not os.path.exists(os.path.dirname(filename)):
                                 try:
                                     os.makedirs(os.path.dirname(filename))
@@ -68,14 +68,14 @@ def main():
                             urllib.request.urlretrieve(lien_img, filename)
                             urls.append(lien_img)
                         else:
-                            logger.warning(f"{img['alt']} est blacklisté")
+                            logger.debug(f"{img['alt']} est blacklisté")
 
     # Export des liens
-    with open(f"scrap_revuedepresse/{auj}/liste_urls.csv", 'w') as file:
+    with open(f"{directory}liste_urls.csv", 'w') as file:
         for row in urls:
             file.write(row)
             file.write("\n")
-    print("Temps d'exécution : %.2f secondes" % (time.time() - temps_debut))
+    logger.debug("Temps d'exécution : %.2f secondes" % (time.time() - temps_debut))
 
 
 def parse_args():
