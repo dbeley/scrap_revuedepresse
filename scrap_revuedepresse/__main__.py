@@ -88,7 +88,7 @@ def main():
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description='Scraper du site revue2presse. Version simplifiée.')
+    parser = argparse.ArgumentParser(description='Scraper revuedepresse.')
     parser.add_argument('--debug', help="Affiche les informations de déboguage", action="store_const", dest="loglevel", const=logging.DEBUG, default=logging.INFO)
     args = parser.parse_args()
 
