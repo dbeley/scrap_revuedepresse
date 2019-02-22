@@ -17,13 +17,13 @@ setuptools.setup(
         include_package_data=True,
         entry_points={
             "console_scripts": [
-                "scrap_revuedepresse=scrap_revuedepresse.__main__:main",
-                "scrap_revuedepresse_simple=scrap_revuedepresse.scrap_revuedepresse_simple:main"
+                "scrap_revuedepresse=scrap_revuedepresse.__main__:main"
+                #"scrap_revuedepresse_simple=scrap_revuedepresse.scrap_revuedepresse_simple:main"
                 ]
             },
         classifiers=[
             "Programming Language :: Python :: 3",
-            "Operating System :: POSIC :: Linux"
+            "Operating System :: POSIX :: Linux"
             ],
         install_requires=[
             'bs4',
