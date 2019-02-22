@@ -24,5 +24,4 @@ python setup.py install
 
 ```
 scrap_revuedepresse
-scrap_revuedepresse_simple
 ```
