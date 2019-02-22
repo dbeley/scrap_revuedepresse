@@ -41,6 +41,13 @@ def main():
         urllib.request.urlretrieve(url, filename)
         i += 1
 
+    # Les Échos
+    filename = f"{directory}{str(i).zfill(2)}.jpg"
+    date = datetime.datetime.now().strftime("%Y%m%d")
+    url = f"https://kiosque.lesechos.fr/medias/une_jdj/{date}.jpg"
+    urllib.request.urlretrieve(url, filename)
+    i += 1
+
     logger.debug("Temps d'exécution : %.2f secondes" % (time.time() - temps_debut))
 
 
