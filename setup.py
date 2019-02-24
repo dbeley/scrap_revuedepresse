@@ -18,7 +18,6 @@ setuptools.setup(
         entry_points={
             "console_scripts": [
                 "scrap_revuedepresse=scrap_revuedepresse.__main__:main"
-                #"scrap_revuedepresse_simple=scrap_revuedepresse.scrap_revuedepresse_simple:main"
                 ]
             },
         classifiers=[
@@ -30,5 +29,7 @@ setuptools.setup(
             'urllib3',
             'requests',
             'lxml',
+            'pandas',
+            'selenium',
             ]
         )
