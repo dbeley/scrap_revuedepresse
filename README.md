@@ -1,6 +1,6 @@
 # scrap_revuedepresse
 
-## Prerequisites
+## Requirements
 
 - python-lxml
 - python-urllib3
@@ -24,4 +24,10 @@ python setup.py install
 
 ```
 scrap_revuedepresse
+```
+
+## Help
+
+```
+scrap_revuedepresse -h
 ```
