@@ -10,14 +10,14 @@ import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 
-from .scrapers.cnews import scrap_cnews
-from .scrapers.epresse import scrap_epresse
 from .scrapers.revue2presse import scrap_revue2presse
+from .scrapers.epresse import scrap_epresse
+from .scrapers.cnews import scrap_cnews
 from .scrapers.vingtminutes import scrap_vingtminutes
+from .scrapers.canardenchaine import scrap_canardenchaine
 from .scrapers.charliehebdo import scrap_charliehebdo
 from .scrapers.courrierinternational import scrap_courrierinternational
 from .scrapers.leun import scrap_leun
-from .scrapers.canardenchaine import scrap_canardenchaine
 
 logger = logging.getLogger()
 temps_debut = time.time()
@@ -31,7 +31,7 @@ def main():
         exit()
     auj = datetime.datetime.now().strftime("%Y-%m-%d")
     jour = datetime.datetime.now().strftime("%A")
-    jour = "test"
+    # jour = "test"
     logger.debug(f"Aujourd'hui : {auj}")
     logger.debug(f"Jour : {jour}")
     directory = f"{auj}/"
@@ -106,7 +106,6 @@ def main():
             logger.debug(f"{i[jour]} : {i[Titre]} non extrait")
 
     browser.quit()
-
     logger.debug("Runtime : %.2f seconds" % (time.time() - temps_debut))
 
 
