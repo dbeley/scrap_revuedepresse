@@ -1,12 +1,12 @@
 ID;Source;Titre;URL
 1;revue2presse;"Le Monde";http://www.revue2presse.fr/newspaper/lemonde/lemonde-cover.jpg
-2;revue2presse;"Libération";http://www.revue2presse.fr/newspaper/liberation/liberation-cover.jpg
-3;revue2presse;"Le Figaro";http://www.revue2presse.fr/newspaper/lefigaro/lefigaro-cover.jpg
-4;revue2presse;"L'Équipe";http://www.revue2presse.fr/newspaper/lequipe/lequipe-cover.jpg
-5;revue2presse;"Aujourd'hui en France";http://www.revue2presse.fr/newspaper/leparisien/aujourdhui-en-france-cover.jpg
-6;revue2presse;"Le Parisien";http://www.revue2presse.fr/newspaper/leparisien/leparisien-cover.jpg
-7;revue2presse;"La Croix";http://www.revue2presse.fr/newspaper/lacroix/lacroix-cover.jpg
-8;revue2presse;"Ouest France";http://www.revue2presse.fr/newspaper/ouestfrance/ouestfrancebretagne-cover.jpg
+2;epresse;"Libération";https://www.epresse.fr/quotidien/liberation
+3;epresse;"Le Figaro";https://www.epresse.fr/quotidien/le-figaro
+4;epresse;"L'Équipe";https://www.epresse.fr/kiosque_premium/l-equipe
+5;epresse;"Aujourd'hui en France";https://www.epresse.fr/quotidien/aujourd-hui-en-france
+6;epresse;"Le Parisien";https://www.epresse.fr/quotidien/le-parisien
+7;epresse;"La Croix";https://www.epresse.fr/quotidien/la-croix
+8;epresse;"Ouest France";https://www.epresse.fr/quotidien/ouest-france
 9;epresse;"L'Opinion";https://www.epresse.fr/quotidien/l-opinion
 10;epresse;"La Voix du Nord";https://www.epresse.fr/quotidien/la-voix-du-nord/lille
 11;epresse;"Sud Ouest";https://www.epresse.fr/quotidien/sud-ouest/edition-bordeaux-rive-gauche
