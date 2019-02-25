@@ -3,6 +3,7 @@ import datetime
 import os
 import errno
 import logging
+import locale
 import argparse
 import pkg_resources
 import codecs
@@ -25,6 +26,7 @@ temps_debut = time.time()
 
 def main():
     args = parse_args()
+    locale.setlocale(locale.LC_TIME, "fr_FR.utf-8")
     liste_journaux = args.file
     if liste_journaux is None:
         logger.error("argument -f not defined. Exiting..")
@@ -37,7 +39,7 @@ def main():
     directory = f"{auj}/"
     io = pkg_resources.resource_stream(__name__, liste_journaux)
     utf8_reader = codecs.getreader("utf-8")
-    df = pd.read_csv(utf8_reader(io), sep=';')
+    df = pd.read_csv(utf8_reader(io), sep=',')
     dict = df.to_dict(orient='records')
 
     # Lancement de selenium
@@ -103,7 +105,7 @@ def main():
             else:
                 logger.error(f"Méthode {méthode} non implémentée")
         else:
-            logger.debug(f"{i[jour]} : {i[Titre]} non extrait")
+            logger.debug(f"{i[jour]} : {i['Titre']} non extrait")
 
     browser.quit()
     logger.debug("Runtime : %.2f seconds" % (time.time() - temps_debut))
