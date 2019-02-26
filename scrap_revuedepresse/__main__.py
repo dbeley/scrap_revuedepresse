@@ -13,6 +13,7 @@ from selenium.webdriver.firefox.options import Options
 
 from .scrapers.revue2presse import scrap_revue2presse
 from .scrapers.epresse import scrap_epresse
+from .scrapers.journauxfr import scrap_journauxfr
 from .scrapers.cnews import scrap_cnews
 from .scrapers.vingtminutes import scrap_vingtminutes
 from .scrapers.canardenchaine import scrap_canardenchaine
@@ -70,6 +71,11 @@ def main():
             elif méthode == "epresse":
                 try:
                     scrap_epresse(url, filename)
+                except Exception as e:
+                    logger.error(f"{méthode} : {str(e)}")
+            elif méthode == "journauxfr":
+                try:
+                    scrap_journauxfr(url, filename)
                 except Exception as e:
                     logger.error(f"{méthode} : {str(e)}")
             elif méthode == "cnews":
