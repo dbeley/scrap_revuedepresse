@@ -28,19 +28,19 @@ temps_debut = time.time()
 def main():
     args = parse_args()
     locale.setlocale(locale.LC_TIME, "fr_FR.utf-8")
-    liste_journaux = args.file
-    if liste_journaux is None:
-        logger.error("argument -f not defined. Exiting..")
-        exit()
+    file = args.file
     auj = datetime.datetime.now().strftime("%Y-%m-%d")
     jour = datetime.datetime.now().strftime("%A")
     # jour = "test"
     logger.debug(f"Aujourd'hui : {auj}")
     logger.debug(f"Jour : {jour}")
     directory = f"{auj}/"
-    io = pkg_resources.resource_stream(__name__, liste_journaux)
-    utf8_reader = codecs.getreader("utf-8")
-    df = pd.read_csv(utf8_reader(io), sep=',')
+
+    if file is None:
+        io = pkg_resources.resource_stream(__name__, "liste_journaux.csv")
+        utf8_reader = codecs.getreader("utf-8")
+        file = utf8_reader(io)
+    df = pd.read_csv(file, sep=',')
     dict = df.to_dict(orient='records')
 
     # Lancement de selenium
@@ -120,7 +120,7 @@ def main():
 def parse_args():
     parser = argparse.ArgumentParser(description='Scraper revuedepresse.')
     parser.add_argument('--debug', help="Display debugging information", action="store_const", dest="loglevel", const=logging.DEBUG, default=logging.INFO)
-    parser.add_argument('-f', '--file', help="File containing the urls to parse (liste_journaux.csv by default)", type=str, default="liste_journaux.csv")
+    parser.add_argument('-f', '--file', help="File containing the urls to parse (optional, liste_journaux.csv by default)", type=str)
     args = parser.parse_args()
 
     logging.basicConfig(level=args.loglevel)
