@@ -30,8 +30,10 @@ def main():
     locale.setlocale(locale.LC_TIME, "fr_FR.utf-8")
     file = args.file
     auj = datetime.datetime.now().strftime("%Y-%m-%d")
-    jour = datetime.datetime.now().strftime("%A")
-    # jour = "test"
+    if args.test:
+        jour = "test"
+    else:
+        jour = datetime.datetime.now().strftime("%A")
     logger.debug(f"Aujourd'hui : {auj}")
     logger.debug(f"Jour : {jour}")
     directory = f"{auj}/"
@@ -121,6 +123,8 @@ def parse_args():
     parser = argparse.ArgumentParser(description='Scraper revuedepresse.')
     parser.add_argument('--debug', help="Display debugging information", action="store_const", dest="loglevel", const=logging.DEBUG, default=logging.INFO)
     parser.add_argument('-f', '--file', help="File containing the urls to parse (optional, liste_journaux.csv by default)", type=str)
+    parser.add_argument('-t', '--test', dest='test', action='store_true')
+    parser.set_defaults(test=False)
     args = parser.parse_args()
 
     logging.basicConfig(level=args.loglevel)
