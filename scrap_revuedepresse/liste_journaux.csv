@@ -20,7 +20,7 @@ Ordre,Méthode,Titre,URL,lundi,mardi,mercredi,jeudi,vendredi,samedi,dimanche,tes
 19,epresse,Aujourd'hui en France,https://www.epresse.fr/quotidien/aujourd-hui-en-france,1,1,1,1,1,1,1,1
 20,epresse,Le Parisien,https://www.epresse.fr/quotidien/le-parisien,1,1,1,1,1,1,1,1
 21,epresse,La Croix,https://www.epresse.fr/quotidien/la-croix,1,1,1,1,1,1,0,1
-22,epresse,L'Opinion,https://www.epresse.fr/quotidien/l-opinion,1,1,1,1,1,1,0,1
+22,epresse,L'Opinion,https://www.epresse.fr/quotidien/l-opinion,1,1,1,1,1,0,0,1
 23,epresse,Ouest France,https://www.epresse.fr/quotidien/ouest-france,1,1,1,1,1,1,0,1
 24,epresse,Sud Ouest,https://www.epresse.fr/quotidien/sud-ouest/edition-bordeaux-rive-gauche,1,1,1,1,1,1,0,1
 25,epresse,La Voix du Nord,https://www.epresse.fr/quotidien/la-voix-du-nord/lille,1,1,1,1,1,1,1,1
