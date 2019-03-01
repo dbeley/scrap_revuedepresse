@@ -1,6 +1,6 @@
 Ordre,Méthode,Titre,URL,lundi,mardi,mercredi,jeudi,vendredi,samedi,dimanche,test
 1,canardenchaine,Le Canard Enchaîné,https://www.lecanardenchaine.fr/,0,0,1,0,0,0,0,1
-2,charliehebdo,Charlie Hebdo,https://charliehebdo.fr/,0,0,1,0,0,0,0,1
+2,charliehebdo,Charlie Hebdo,https://charliehebdo.fr/,0,0,0,0,0,0,0,1
 3,revue2presse,Le Monde,http://www.revue2presse.fr/newspaper/lemonde/lemonde-cover.jpg,1,1,1,1,1,1,0,1
 4,epresse,Libération,https://www.epresse.fr/quotidien/liberation,1,1,1,1,1,1,0,1
 5,epresse,Le Figaro,https://www.epresse.fr/quotidien/le-figaro,1,1,1,1,1,1,0,1
@@ -9,9 +9,9 @@ Ordre,Méthode,Titre,URL,lundi,mardi,mercredi,jeudi,vendredi,samedi,dimanche,tes
 8,epresse,L’Obs,https://www.epresse.fr/magazine/l-obs,0,0,0,1,0,0,0,1
 9,epresse,L’Express,https://www.epresse.fr/magazine/l-express,0,0,1,0,0,0,0,1
 10,epresse,Challenges,https://www.epresse.fr/magazine/challenges,0,0,0,1,0,0,0,1
-11,epresse,Marianne,https://www.epresse.fr/magazine/marianne,0,0,0,0,1,0,0,1
+11,journauxfr,Marianne,https://www.journaux.fr/marianne_news-opinions-politique_actualite_84944.html,0,0,0,0,1,0,0,1
 12,epresse,Le Point,https://www.epresse.fr/magazine/le-point,0,0,0,1,0,0,0,1
-13,epresse,Politis,https://www.epresse.fr/magazine/politis,0,0,1,0,0,0,0,1
+13,epresse,Politis,https://www.epresse.fr/magazine/politis,0,0,0,0,0,0,0,1
 14,leun,Le 1,https://le1hebdo.fr/img/decouvrir/11.jpg,0,0,1,0,0,0,0,1
 15,epresse,L'Humanité,https://www.epresse.fr/quotidien/l-humanite,1,1,1,1,1,0,0,1
 16,epresse,Les Échos,https://www.epresse.fr/quotidien/les-echos,1,1,1,1,1,0,0,1
@@ -47,8 +47,8 @@ Ordre,Méthode,Titre,URL,lundi,mardi,mercredi,jeudi,vendredi,samedi,dimanche,tes
 46,revue2presse,L'Yonne Républicaine,http://www.revue2presse.fr/newspaper/lamontagne/lyonne-cover.jpg,1,1,1,1,1,1,0,1
 47,revue2presse,Presse Océan,http://www.revue2presse.fr/newspaper/presseocean/presseocean-cover.jpg,1,1,1,1,1,1,1,1
 48,epresse,L’Union Ardennes,https://www.epresse.fr/quotidien/l-union-ardennes/reims,1,1,1,1,1,1,1,1
-49,epresse,La Marne (Meaux),https://www.epresse.fr/magazine/la-marne/meaux/,0,0,1,0,0,0,0,1
-50,epresse,La Marne (Marne-la-Vallée),https://www.epresse.fr/magazine/la-marne/marne-la-vallee/,0,0,1,0,0,0,0,1
+49,epresse,La Marne (Meaux),https://www.epresse.fr/magazine/la-marne/meaux/,0,0,0,0,0,0,0,1
+50,epresse,La Marne (Marne-la-Vallée),https://www.epresse.fr/magazine/la-marne/marne-la-vallee/,0,0,0,0,0,0,0,1
 51,journauxfr,Jeune Afrique,https://www.journaux.fr/jeune-afrique-_news-opinions-politique_actualite_85540.html,0,0,0,0,0,0,1,1
 52,epresse,Journal de l'île,https://www.epresse.fr/quotidien/journal-de-l-ile/le-journal-de-l-ile-de-la-reunion,1,1,1,1,1,1,1,1
 53,epresse,France-Guyane,https://www.epresse.fr/quotidien/france-guyane,1,1,1,1,1,1,0,1
