@@ -20,6 +20,7 @@ from .scrapers.canardenchaine import scrap_canardenchaine
 from .scrapers.charliehebdo import scrap_charliehebdo
 from .scrapers.courrierinternational import scrap_courrierinternational
 from .scrapers.leun import scrap_leun
+from .scrapers.lemonde import scrap_lemonde
 
 logger = logging.getLogger()
 temps_debut = time.time()
@@ -42,14 +43,14 @@ def main():
         io = pkg_resources.resource_stream(__name__, "liste_journaux.csv")
         utf8_reader = codecs.getreader("utf-8")
         file = utf8_reader(io)
-    df = pd.read_csv(file, sep=',')
+    df = pd.read_csv(file, sep=',', comment='#')
     dict = df.to_dict(orient='records')
 
     # Lancement de selenium
     options = Options()
     options.headless = True
     browser = webdriver.Firefox(options=options)
-    browser.set_page_load_timeout(10)
+    browser.set_page_load_timeout(60)
 
     for i in dict:
         if i[jour] == 1:
@@ -78,6 +79,11 @@ def main():
             elif méthode == "journauxfr":
                 try:
                     scrap_journauxfr(url, filename)
+                except Exception as e:
+                    logger.error(f"{méthode} : {str(e)}")
+            elif méthode == "lemonde":
+                try:
+                    scrap_lemonde(url, filename, browser)
                 except Exception as e:
                     logger.error(f"{méthode} : {str(e)}")
             elif méthode == "cnews":
