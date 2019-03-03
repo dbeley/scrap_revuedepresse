@@ -21,6 +21,7 @@ from .scrapers.charliehebdo import scrap_charliehebdo
 from .scrapers.courrierinternational import scrap_courrierinternational
 from .scrapers.leun import scrap_leun
 from .scrapers.lemonde import scrap_lemonde
+from .scrapers.jeuneafrique import scrap_jeuneafrique
 
 logger = logging.getLogger()
 temps_debut = time.time()
@@ -109,6 +110,11 @@ def main():
             elif méthode == "courrierinternational":
                 try:
                     scrap_courrierinternational(url, filename)
+                except Exception as e:
+                    logger.error(f"{méthode} : {str(e)}")
+            elif méthode == "jeuneafrique":
+                try:
+                    scrap_jeuneafrique(url, filename)
                 except Exception as e:
                     logger.error(f"{méthode} : {str(e)}")
             elif méthode == "leun":
