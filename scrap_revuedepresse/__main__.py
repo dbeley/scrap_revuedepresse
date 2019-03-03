@@ -51,11 +51,13 @@ def main():
     options = Options()
     options.headless = True
     browser = webdriver.Firefox(options=options)
-    browser.set_page_load_timeout(60)
+    # browser.set_page_load_timeout(60)
 
+    ordre = 0
     for i in dict:
         if i[jour] == 1:
-            filename = f"{directory}{str(i['Ordre']).zfill(2)}_{i['Titre'].replace(' ', '')}.jpg"
+            ordre = ordre + 1
+            filename = f"{directory}{str(ordre).zfill(2)}_{i['Titre'].replace(' ', '')}.jpg"
 
             if not os.path.exists(os.path.dirname(filename)):
                 try:

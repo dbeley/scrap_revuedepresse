@@ -1,59 +1,59 @@
-Ordre,Méthode,Titre,URL,lundi,mardi,mercredi,jeudi,vendredi,samedi,dimanche,test
-1,canardenchaine,Le Canard Enchaîné,https://www.lecanardenchaine.fr/,0,0,1,0,0,0,0,1
-2,charliehebdo,Charlie Hebdo,https://charliehebdo.fr/,0,0,1,0,0,0,0,1
-# 3,revue2presse,Le Monde,http://www.revue2presse.fr/newspaper/lemonde/lemonde-cover.jpg,1,1,1,1,1,1,0,1
-3,lemonde,Le Monde,https://journal.lemonde.fr,1,1,1,1,1,1,0,1
-4,epresse,Libération,https://www.epresse.fr/quotidien/liberation,1,1,1,1,1,1,0,1
-5,epresse,Le Figaro,https://www.epresse.fr/quotidien/le-figaro,1,1,1,1,1,1,0,1
-6,epresse,L'Équipe,https://www.epresse.fr/quotidien/l-equipe,1,1,1,1,1,1,1,1
-7,epresse,Le Journal du Dimanche,https://www.epresse.fr/magazine/le-journal-du-dimanche,0,0,0,0,0,0,1,1
-8,courrierinternational,Courrier International,https://www.courrierinternational.com/,0,0,0,1,0,0,0,1
-9,epresse,L’Obs,https://www.epresse.fr/magazine/l-obs,0,0,0,1,0,0,0,1
-10,epresse,L’Express,https://www.epresse.fr/magazine/l-express,0,0,1,0,0,0,0,1
-11,epresse,Challenges,https://www.epresse.fr/magazine/challenges,0,0,0,1,0,0,0,1
-12,journauxfr,Marianne,https://www.journaux.fr/marianne_news-opinions-politique_actualite_84944.html,0,0,0,0,1,0,0,1
-13,epresse,Le Point,https://www.epresse.fr/magazine/le-point,0,0,0,1,0,0,0,1
-14,epresse,Politis,https://www.epresse.fr/magazine/politis,0,0,0,1,0,0,0,1
-15,leun,Le 1,https://le1hebdo.fr/img/decouvrir/11.jpg,0,0,1,0,0,0,0,1
-16,epresse,L'Humanité,https://www.epresse.fr/quotidien/l-humanite,1,1,1,1,1,0,0,1
-17,epresse,Les Échos,https://www.epresse.fr/quotidien/les-echos,1,1,1,1,1,0,0,1
-18,20m,20 minutes,VIDE,1,1,1,1,1,0,0,1
-# 18,cnews,CNEWS,VIDE,1,1,1,1,1,0,0,1
-19,epresse,Aujourd'hui en France,https://www.epresse.fr/quotidien/aujourd-hui-en-france,1,1,1,1,1,1,1,1
-20,epresse,Le Parisien,https://www.epresse.fr/quotidien/le-parisien,1,1,1,1,1,1,1,1
-21,epresse,La Croix,https://www.epresse.fr/quotidien/la-croix,1,1,1,1,1,1,0,1
-22,epresse,L'Opinion,https://www.epresse.fr/quotidien/l-opinion,1,1,1,1,1,0,0,1
-23,epresse,Ouest France,https://www.epresse.fr/quotidien/ouest-france,1,1,1,1,1,1,0,1
-24,epresse,Sud Ouest,https://www.epresse.fr/quotidien/sud-ouest/edition-bordeaux-rive-gauche,1,1,1,1,1,1,0,1
-25,epresse,La Voix du Nord,https://www.epresse.fr/quotidien/la-voix-du-nord/lille,1,1,1,1,1,1,1,1
-26,epresse,Le Dauphiné Libéré,https://www.epresse.fr/quotidien/le-dauphine-libere/montelimar-drome-provencale,1,1,1,1,1,1,1,1
-27,epresse,Le Télégramme,https://www.epresse.fr/quotidien/le-telegramme/quimper,1,1,1,1,1,1,1,1
-28,epresse,Le Progrès,https://www.epresse.fr/quotidien/le-progres/edition-de-lyon-villeurbanne-caluire,1,1,1,1,1,1,1,1
-29,epresse,La Montagne,https://www.epresse.fr/quotidien/la-montagne/metropole/,1,1,1,1,1,1,1,1
-30,epresse,La Nouvelle République,https://www.epresse.fr/quotidien/la-nouvelle-republique/indre-et-loire-tours-et-agglo,1,1,1,1,1,1,0,1
-31,epresse,Dernières Nouvelles d’Alsace,https://www.epresse.fr/quotidien/les-dernieres-nouvelles-d-alsace/edition-de-strasbourg,1,1,1,1,1,1,1,1
-32,epresse,La Dépêche du Midi,https://www.epresse.fr/quotidien/la-depeche-du-midi/edition-toulouse,1,1,1,1,1,1,1,1
-33,epresse,L'Est Républicain,https://www.epresse.fr/quotidien/l-est-republicain/edition-de-besancon,1,1,1,1,1,1,1,1
-34,epresse,Midi Libre,https://www.epresse.fr/quotidien/midi-libre/edition-montpellier,1,1,1,1,1,1,1,1
-35,epresse,La Provence,https://www.epresse.fr/quotidien/la-provence/la-provence-edition-marseille,1,1,1,1,1,1,1,1
-36,epresse,Le Courrier de l’Ouest,https://www.epresse.fr/quotidien/le-courrier-de-l-ouest,1,1,1,1,1,1,1,1
-# 36,revue2presse,Nice-matin,http://www.revue2presse.fr/newspaper/nicematin/nicematin-nice-cover.jpg,1,1,1,1,1,1,1,1
-37,epresse,L’Alsace,https://www.epresse.fr/quotidien/l-alsace/edition-mulhouse,1,1,1,1,1,1,1,1
-38,epresse,Courrier picard,https://www.epresse.fr/quotidien/courrier-picard/amiens,1,1,1,1,1,1,1,1
-39,epresse,La Marseillaise,https://www.epresse.fr/quotidien/la-marseillaise,1,1,1,1,1,1,0,1
-# 40,revue2presse,Var-matin,http://www.revue2presse.fr/newspaper/varmatin/varmatin-toulon-cover.jpg,1,1,1,1,1,1,1,1
-40,epresse,L'Indépendant,https://www.epresse.fr/quotidien/independant/edition-perpignan,1,1,1,1,1,1,1,1
-41,epresse,Le Journal du Centre,https://www.epresse.fr/quotidien/le-jdc,1,1,1,1,1,1,1,1
-42,epresse,Le Berry Républicain,https://www.epresse.fr/quotidien/le-berry,1,1,1,1,1,1,1,1
-43,epresse,Le Populaire du Centre,https://www.epresse.fr/quotidien/le-populaire,1,1,1,1,1,1,1,1
-44,epresse,L'Yonne Républicaine,https://www.epresse.fr/quotidien/l-yonne/nord/,1,1,1,1,1,1,0,1
-45,epresse,Presse Océan,https://www.epresse.fr/quotidien/presse-ocean,1,1,1,1,1,1,1,1
-46,epresse,L’Union Ardennes,https://www.epresse.fr/quotidien/l-union-ardennes/reims,1,1,1,1,1,1,1,1
-# 47,epresse,La Marne (Meaux),https://www.epresse.fr/magazine/la-marne/meaux/,0,0,0,0,0,0,0,1
-# 48,epresse,La Marne (Marne-la-Vallée),https://www.epresse.fr/magazine/la-marne/marne-la-vallee/,0,0,0,0,0,0,0,1
-# 49,journauxfr,Jeune Afrique,https://www.journaux.fr/jeune-afrique-_news-opinions-politique_actualite_85540.html,0,0,0,0,0,0,0,1
-49,jeuneafrique,Jeune Afrique,https://kiosque.jeuneafrique.com/catalog/,0,0,0,0,0,0,1,1
-50,epresse,Journal de l'île,https://www.epresse.fr/quotidien/journal-de-l-ile/le-journal-de-l-ile-de-la-reunion,1,1,1,1,1,1,1,1
-51,epresse,France-Guyane,https://www.epresse.fr/quotidien/france-guyane,1,1,1,1,1,1,0,1
-52,epresse,France-Antilles Martinique,https://www.epresse.fr/quotidien/france-antilles-martinique,1,1,1,1,1,1,0,1
-53,epresse,France-Antilles Guadeloupe,https://www.epresse.fr/quotidien/france-antilles-guadeloupe,1,1,1,1,1,1,0,1
+Méthode,Titre,URL,lundi,mardi,mercredi,jeudi,vendredi,samedi,dimanche,test
+canardenchaine,Le Canard Enchaîné,https://www.lecanardenchaine.fr/,0,0,1,0,0,0,0,1
+charliehebdo,Charlie Hebdo,https://charliehebdo.fr/,0,0,1,0,0,0,0,1
+# revue2presse,Le Monde,http://www.revue2presse.fr/newspaper/lemonde/lemonde-cover.jpg,1,1,1,1,1,1,0,1
+lemonde,Le Monde,https://journal.lemonde.fr,1,1,1,1,1,1,0,1
+epresse,Libération,https://www.epresse.fr/quotidien/liberation,1,1,1,1,1,1,0,1
+epresse,Le Figaro,https://www.epresse.fr/quotidien/le-figaro,1,1,1,1,1,1,0,1
+epresse,L'Équipe,https://www.epresse.fr/quotidien/l-equipe,1,1,1,1,1,1,1,1
+epresse,Le Journal du Dimanche,https://www.epresse.fr/magazine/le-journal-du-dimanche,0,0,0,0,0,0,1,1
+courrierinternational,Courrier International,https://www.courrierinternational.com/,0,0,0,1,0,0,0,1
+epresse,L’Obs,https://www.epresse.fr/magazine/l-obs,0,0,0,1,0,0,0,1
+epresse,L’Express,https://www.epresse.fr/magazine/l-express,0,0,1,0,0,0,0,1
+epresse,Challenges,https://www.epresse.fr/magazine/challenges,0,0,0,1,0,0,0,1
+journauxfr,Marianne,https://www.journaux.fr/marianne_news-opinions-politique_actualite_84944.html,0,0,0,0,1,0,0,1
+epresse,Le Point,https://www.epresse.fr/magazine/le-point,0,0,0,1,0,0,0,1
+epresse,Politis,https://www.epresse.fr/magazine/politis,0,0,0,1,0,0,0,1
+leun,Le 1,https://le1hebdo.fr/img/decouvrir/11.jpg,0,0,1,0,0,0,0,1
+epresse,L'Humanité,https://www.epresse.fr/quotidien/l-humanite,1,1,1,1,1,0,0,1
+epresse,Les Échos,https://www.epresse.fr/quotidien/les-echos,1,1,1,1,1,0,0,1
+20m,20 minutes,VIDE,1,1,1,1,1,0,0,1
+cnews,CNEWS,VIDE,1,1,1,1,1,0,0,1
+epresse,Aujourd'hui en France,https://www.epresse.fr/quotidien/aujourd-hui-en-france,1,1,1,1,1,1,1,1
+epresse,Le Parisien,https://www.epresse.fr/quotidien/le-parisien,1,1,1,1,1,1,1,1
+epresse,La Croix,https://www.epresse.fr/quotidien/la-croix,1,1,1,1,1,1,0,1
+epresse,L'Opinion,https://www.epresse.fr/quotidien/l-opinion,1,1,1,1,1,0,0,1
+epresse,Ouest France,https://www.epresse.fr/quotidien/ouest-france,1,1,1,1,1,1,0,1
+epresse,Sud Ouest,https://www.epresse.fr/quotidien/sud-ouest/edition-bordeaux-rive-gauche,1,1,1,1,1,1,0,1
+epresse,La Voix du Nord,https://www.epresse.fr/quotidien/la-voix-du-nord/lille,1,1,1,1,1,1,1,1
+epresse,Le Dauphiné Libéré,https://www.epresse.fr/quotidien/le-dauphine-libere/montelimar-drome-provencale,1,1,1,1,1,1,1,1
+epresse,Le Télégramme,https://www.epresse.fr/quotidien/le-telegramme/quimper,1,1,1,1,1,1,1,1
+epresse,Le Progrès,https://www.epresse.fr/quotidien/le-progres/edition-de-lyon-villeurbanne-caluire,1,1,1,1,1,1,1,1
+epresse,La Montagne,https://www.epresse.fr/quotidien/la-montagne/metropole/,1,1,1,1,1,1,1,1
+epresse,La Nouvelle République,https://www.epresse.fr/quotidien/la-nouvelle-republique/indre-et-loire-tours-et-agglo,1,1,1,1,1,1,0,1
+epresse,Dernières Nouvelles d’Alsace,https://www.epresse.fr/quotidien/les-dernieres-nouvelles-d-alsace/edition-de-strasbourg,1,1,1,1,1,1,1,1
+epresse,La Dépêche du Midi,https://www.epresse.fr/quotidien/la-depeche-du-midi/edition-toulouse,1,1,1,1,1,1,1,1
+epresse,L'Est Républicain,https://www.epresse.fr/quotidien/l-est-republicain/edition-de-besancon,1,1,1,1,1,1,1,1
+epresse,Midi Libre,https://www.epresse.fr/quotidien/midi-libre/edition-montpellier,1,1,1,1,1,1,1,1
+epresse,La Provence,https://www.epresse.fr/quotidien/la-provence/la-provence-edition-marseille,1,1,1,1,1,1,1,1
+epresse,Le Courrier de l’Ouest,https://www.epresse.fr/quotidien/le-courrier-de-l-ouest,1,1,1,1,1,1,1,1
+# revue2presse,Nice-matin,http://www.revue2presse.fr/newspaper/nicematin/nicematin-nice-cover.jpg,1,1,1,1,1,1,1,1
+epresse,L’Alsace,https://www.epresse.fr/quotidien/l-alsace/edition-mulhouse,1,1,1,1,1,1,1,1
+epresse,Courrier picard,https://www.epresse.fr/quotidien/courrier-picard/amiens,1,1,1,1,1,1,1,1
+epresse,La Marseillaise,https://www.epresse.fr/quotidien/la-marseillaise,1,1,1,1,1,1,0,1
+# revue2presse,Var-matin,http://www.revue2presse.fr/newspaper/varmatin/varmatin-toulon-cover.jpg,1,1,1,1,1,1,1,1
+epresse,L'Indépendant,https://www.epresse.fr/quotidien/independant/edition-perpignan,1,1,1,1,1,1,1,1
+epresse,Le Journal du Centre,https://www.epresse.fr/quotidien/le-jdc,1,1,1,1,1,1,1,1
+epresse,Le Berry Républicain,https://www.epresse.fr/quotidien/le-berry,1,1,1,1,1,1,1,1
+epresse,Le Populaire du Centre,https://www.epresse.fr/quotidien/le-populaire,1,1,1,1,1,1,1,1
+epresse,L'Yonne Républicaine,https://www.epresse.fr/quotidien/l-yonne/nord/,1,1,1,1,1,1,0,1
+epresse,Presse Océan,https://www.epresse.fr/quotidien/presse-ocean,1,1,1,1,1,1,1,1
+epresse,L’Union Ardennes,https://www.epresse.fr/quotidien/l-union-ardennes/reims,1,1,1,1,1,1,1,1
+# epresse,La Marne (Meaux),https://www.epresse.fr/magazine/la-marne/meaux/,0,0,0,0,0,0,0,1
+# epresse,La Marne (Marne-la-Vallée),https://www.epresse.fr/magazine/la-marne/marne-la-vallee/,0,0,0,0,0,0,0,1
+# journauxfr,Jeune Afrique,https://www.journaux.fr/jeune-afrique-_news-opinions-politique_actualite_85540.html,0,0,0,0,0,0,0,1
+jeuneafrique,Jeune Afrique,https://kiosque.jeuneafrique.com/catalog/,0,0,0,0,0,0,1,1
+epresse,Journal de l'île,https://www.epresse.fr/quotidien/journal-de-l-ile/le-journal-de-l-ile-de-la-reunion,1,1,1,1,1,1,1,1
+epresse,France-Guyane,https://www.epresse.fr/quotidien/france-guyane,1,1,1,1,1,1,0,1
+epresse,France-Antilles Martinique,https://www.epresse.fr/quotidien/france-antilles-martinique,1,1,1,1,1,1,0,1
+epresse,France-Antilles Guadeloupe,https://www.epresse.fr/quotidien/france-antilles-guadeloupe,1,1,1,1,1,1,0,1
