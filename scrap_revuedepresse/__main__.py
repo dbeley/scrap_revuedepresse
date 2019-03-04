@@ -76,7 +76,7 @@ def main():
                     logger.error(f"{méthode} : {str(e)}")
             elif méthode == "epresse":
                 try:
-                    scrap_epresse(url, filename)
+                    scrap_epresse(url, filename, auj)
                 except Exception as e:
                     logger.error(f"{méthode} : {str(e)}")
             elif méthode == "journauxfr":
