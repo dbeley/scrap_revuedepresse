@@ -52,7 +52,7 @@ epresse,L’Union Ardennes,https://www.epresse.fr/quotidien/l-union-ardennes/rei
 # epresse,La Marne (Meaux),https://www.epresse.fr/magazine/la-marne/meaux/,0,0,0,0,0,0,0,1
 # epresse,La Marne (Marne-la-Vallée),https://www.epresse.fr/magazine/la-marne/marne-la-vallee/,0,0,0,0,0,0,0,1
 # journauxfr,Jeune Afrique,https://www.journaux.fr/jeune-afrique-_news-opinions-politique_actualite_85540.html,0,0,0,0,0,0,0,1
-jeuneafrique,Jeune Afrique,https://kiosque.jeuneafrique.com/catalog/,0,0,0,0,0,0,1,1
+jeuneafrique,Jeune Afrique,https://kiosque.jeuneafrique.com/catalog/,1,0,0,0,0,0,0,1
 epresse,Journal de l'île,https://www.epresse.fr/quotidien/journal-de-l-ile/le-journal-de-l-ile-de-la-reunion,1,1,1,1,1,1,1,1
 epresse,France-Guyane,https://www.epresse.fr/quotidien/france-guyane,1,1,1,1,1,1,0,1
 epresse,France-Antilles Martinique,https://www.epresse.fr/quotidien/france-antilles-martinique,1,1,1,1,1,1,0,1
