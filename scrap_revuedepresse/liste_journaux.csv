@@ -1,12 +1,12 @@
 Méthode,Titre,URL,lundi,mardi,mercredi,jeudi,vendredi,samedi,dimanche,test
 canardenchaine,Le Canard Enchaîné,https://www.lecanardenchaine.fr/,0,0,1,0,0,0,0,1
-charliehebdo,Charlie Hebdo,https://charliehebdo.fr/,0,0,1,0,0,0,0,1
 # revue2presse,Le Monde,http://www.revue2presse.fr/newspaper/lemonde/lemonde-cover.jpg,1,1,1,1,1,1,0,1
 lemonde,Le Monde,https://journal.lemonde.fr,1,1,1,1,1,1,0,1
 epresse,Libération,https://www.epresse.fr/quotidien/liberation,1,1,1,1,1,1,0,1
 epresse,Le Figaro,https://www.epresse.fr/quotidien/le-figaro,1,1,1,1,1,1,0,1
 epresse,L'Équipe,https://www.epresse.fr/quotidien/l-equipe,1,1,1,1,1,1,1,1
 epresse,Le Journal du Dimanche,https://www.epresse.fr/magazine/le-journal-du-dimanche,0,0,0,0,0,0,1,1
+charliehebdo,Charlie Hebdo,https://charliehebdo.fr/,0,0,0,1,0,0,0,1
 courrierinternational,Courrier International,https://www.courrierinternational.com/,0,0,0,1,0,0,0,1
 epresse,L’Obs,https://www.epresse.fr/magazine/l-obs,0,0,0,1,0,0,0,1
 epresse,L’Express,https://www.epresse.fr/magazine/l-express,0,0,1,0,0,0,0,1

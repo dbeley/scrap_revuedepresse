@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-This script scraps the content of the revue2presse website
+extract newspapers covers
 """
 
 __version__ = "0.0.1"
