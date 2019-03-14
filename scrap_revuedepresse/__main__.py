@@ -14,6 +14,7 @@ from selenium.webdriver.firefox.options import Options
 from .scrapers.revue2presse import scrap_revue2presse
 from .scrapers.epresse import scrap_epresse
 from .scrapers.journauxfr import scrap_journauxfr
+from .scrapers.kiosko import scrap_kiosko
 from .scrapers.cnews import scrap_cnews
 from .scrapers.vingtminutes import scrap_vingtminutes
 from .scrapers.canardenchaine import scrap_canardenchaine
@@ -31,6 +32,7 @@ def main():
     args = parse_args()
     locale.setlocale(locale.LC_TIME, "fr_FR.utf-8")
     file = args.file
+    international = args.international
     auj = datetime.datetime.now().strftime("%Y-%m-%d")
     if args.test:
         jour = "test"
@@ -41,7 +43,11 @@ def main():
     directory = f"{auj}/"
 
     if file is None:
-        io = pkg_resources.resource_stream(__name__, "liste_journaux.csv")
+        if international:
+            io = pkg_resources.resource_stream(__name__, "liste_journaux_internationaux.csv")
+            directory = f"{auj}_international/"
+        else:
+            io = pkg_resources.resource_stream(__name__, "liste_journaux.csv")
         utf8_reader = codecs.getreader("utf-8")
         file = utf8_reader(io)
     df = pd.read_csv(file, sep=',', comment='#')
@@ -82,6 +88,11 @@ def main():
             elif méthode == "journauxfr":
                 try:
                     scrap_journauxfr(url, filename)
+                except Exception as e:
+                    logger.error(f"{méthode} : {str(e)}")
+            elif méthode == "kiosko":
+                try:
+                    scrap_kiosko(url, filename)
                 except Exception as e:
                     logger.error(f"{méthode} : {str(e)}")
             elif méthode == "lemonde":
@@ -138,7 +149,8 @@ def parse_args():
     parser.add_argument('--debug', help="Display debugging information", action="store_const", dest="loglevel", const=logging.DEBUG, default=logging.INFO)
     parser.add_argument('-f', '--file', help="File containing the urls to parse (optional, liste_journaux.csv by default)", type=str)
     parser.add_argument('-t', '--test', dest='test', action='store_true')
-    parser.set_defaults(test=False)
+    parser.add_argument('-i', '--international', dest='international', action='store_true')
+    parser.set_defaults(test=False, international=False)
     args = parser.parse_args()
 
     logging.basicConfig(level=args.loglevel)

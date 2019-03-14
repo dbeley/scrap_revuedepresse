@@ -1,0 +1,29 @@
+Pays,Méthode,Titre,URL,lundi,mardi,mercredi,jeudi,vendredi,samedi,dimanche,test
+Royaume-Uni,kiosko,The Guardian,http://en.kiosko.net/uk/np/guardian.html,1,1,1,1,1,1,1,1
+Royaume-Uni,kiosko,The Times,http://en.kiosko.net/uk/np/the_times.html,1,1,1,1,1,1,1,1
+Royaume-Uni,kiosko,Daily Mail,http://en.kiosko.net/uk/np/daily_mail.html,1,1,1,1,1,1,1,1
+France,lemonde,Le Monde,https://journal.lemonde.fr,1,1,1,1,1,1,1,1
+France,epresse,Le Figaro,https://www.epresse.fr/quotidien/le-figaro,1,1,1,1,1,1,1,1
+Allemagne, kiosko,Die Welt,http://en.kiosko.net/de/np/die_welt.html,1,1,1,1,1,1,1,1
+Allemagne,kiosko,Frankfurter Allgemeine,http://en.kiosko.net/de/np/faz.html,1,1,1,1,1,1,1,1
+Espagne,kiosko,El Mundo,http://en.kiosko.net/es/np/elmundo.html,1,1,1,1,1,1,1,1
+Espagne,kiosko,El País,http://en.kiosko.net/es/np/elpais.html,1,1,1,1,1,1,1,1
+Italie,kiosko,La Repubblica,http://en.kiosko.net/it/np/repubblica.html,1,1,1,1,1,1,1,1
+Italie,kiosko,La Stampa,http://en.kiosko.net/it/np/stampa.html,1,1,1,1,1,1,1,1
+Irlande,kiosko,The Irish Times,http://en.kiosko.net/ie/np/irish_times.html,1,1,1,1,1,1,1,1
+Suisse,kiosko,Tribune de Genève,http://en.kiosko.net/ch/np/tribune_geneve.html,1,1,1,1,1,1,1,1
+Belgique,kiosko,De Morgen,http://en.kiosko.net/be/np/morgen.html,1,1,1,1,1,1,1,1
+Pays-Bas,kiosko,Algemeen Dagblad,http://en.kiosko.net/nl/np/ad.html,1,1,1,1,1,1,1,1
+États-Unis,kiosko,New York Times,http://en.kiosko.net/us/np/newyork_times.html,1,1,1,1,1,1,1,1
+États-Unis,kiosko,The Washington Post,http://en.kiosko.net/us/np/washington_post.html,1,1,1,1,1,1,1,1
+Canada,kiosko,The Globe And Mail,http://en.kiosko.net/ca/np/ca_globe_mail.html,1,1,1,1,1,1,1,1
+Russie,kiosko,Komsomolskaya Pravda,http://en.kiosko.net/ru/np/komsomolkaya_pravda.html,1,1,1,1,1,1,1,1
+Inde,kiosko,Hindustan Times,http://en.kiosko.net/in/np/hindustan_times.html,1,1,1,1,1,1,1,1
+Chine,kiosko,China Daily,http://en.kiosko.net/cn/np/china_daily.html,1,1,1,1,1,1,1,1
+Japon,kiosko,The Japan Times,http://en.kiosko.net/jp/np/japan_times.html,1,1,1,1,1,1,1,1
+Turquie,kiosko,Cumhuriyet,http://en.kiosko.net/tr/np/cumhuriyet.html,1,1,1,1,1,1,1,1
+Arabie Saoudite,kiosko,Gulf News,http://en.kiosko.net/asi/np/gulf_news.html,1,1,1,1,1,1,1,1
+Afrique du Sud,kiosko,The Star,http://en.kiosko.net/za/np/star.html,1,1,1,1,1,1,1,1
+Brésil,kiosko,O Globo,http://en.kiosko.net/br/np/br_oglobo.html,1,1,1,1,1,1,1,1
+Argentine,kiosko,Clarín,http://en.kiosko.net/ar/np/ar_clarin.html,1,1,1,1,1,1,1,1
+Australie,kiosko,The Australian,http://en.kiosko.net/au/np/au_australian.html,1,1,1,1,1,1,1,1
