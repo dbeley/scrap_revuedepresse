@@ -63,7 +63,10 @@ def main():
     for i in dict:
         if i[jour] == 1:
             ordre = ordre + 1
-            filename = f"{directory}{str(ordre).zfill(2)}_{i['Titre'].replace(' ', '')}.jpg"
+            méthode = i['Méthode']
+            url = i['URL']
+            titre = i['Titre']
+            filename = f"{directory}{str(ordre).zfill(2)}_{titre.replace(' ', '')}.jpg"
 
             if not os.path.exists(os.path.dirname(filename)):
                 try:
@@ -72,71 +75,69 @@ def main():
                     if exc.errno != errno.EEXIST:
                         raise
 
-            méthode = i['Méthode']
-            url = i['URL']
             logger.debug(f"{méthode} : {url} vers {filename}")
             if méthode == "revue2presse":
                 try:
                     scrap_revue2presse(url, filename)
                 except Exception as e:
-                    logger.error(f"{méthode} : {str(e)}")
+                    logger.error(f"{titre} - {méthode} : {str(e)}")
             elif méthode == "epresse":
                 try:
                     scrap_epresse(url, filename, auj)
                 except Exception as e:
-                    logger.error(f"{méthode} : {str(e)}")
+                    logger.error(f"{titre} - {méthode} : {str(e)}")
             elif méthode == "journauxfr":
                 try:
                     scrap_journauxfr(url, filename)
                 except Exception as e:
-                    logger.error(f"{méthode} : {str(e)}")
+                    logger.error(f"{titre} - {méthode} : {str(e)}")
             elif méthode == "kiosko":
                 try:
                     scrap_kiosko(url, filename)
                 except Exception as e:
-                    logger.error(f"{méthode} : {str(e)}")
+                    logger.error(f"{titre} - {méthode} : {str(e)}")
             elif méthode == "lemonde":
                 try:
                     scrap_lemonde(url, filename, browser)
                 except Exception as e:
-                    logger.error(f"{méthode} : {str(e)}")
+                    logger.error(f"{titre} - {méthode} : {str(e)}")
             elif méthode == "cnews":
                 try:
                     scrap_cnews(filename, browser)
                 except Exception as e:
-                    logger.error(f"{méthode} : {str(e)}")
+                    logger.error(f"{titre} - {méthode} : {str(e)}")
             elif méthode == "20m":
                 try:
                     scrap_vingtminutes(filename)
                 except Exception as e:
-                    logger.error(f"{méthode} : {str(e)}")
+                    logger.error(f"{titre} - {méthode} : {str(e)}")
             elif méthode == "canardenchaine":
                 try:
                     scrap_canardenchaine(url, filename)
                 except Exception as e:
-                    logger.error(f"{méthode} : {str(e)}")
+                    logger.error(f"{titre} - {méthode} : {str(e)}")
             elif méthode == "charliehebdo":
                 try:
                     scrap_charliehebdo(url, filename)
                 except Exception as e:
-                    logger.error(f"{méthode} : {str(e)}")
+                    logger.error(f"{titre} - {méthode} : {str(e)}")
             elif méthode == "courrierinternational":
                 try:
                     scrap_courrierinternational(url, filename)
                 except Exception as e:
-                    logger.error(f"{méthode} : {str(e)}")
+                    logger.error(f"{titre} - {méthode} : {str(e)}")
             elif méthode == "jeuneafrique":
                 try:
                     scrap_jeuneafrique(url, filename)
                 except Exception as e:
-                    logger.error(f"{méthode} : {str(e)}")
+                    logger.error(f"{titre} - {méthode} : {str(e)}")
             elif méthode == "leun":
                 try:
                     scrap_leun(url, filename)
                 except Exception as e:
-                    logger.error(f"{méthode} : {str(e)}")
+                    logger.error(f"{titre} - {méthode} : {str(e)}")
             else:
-                logger.error(f"Méthode {méthode} non implémentée")
+                logger.error(f"{titre} : Méthode {méthode} non implémentée")
         else:
             logger.debug(f"{i[jour]} : {i['Titre']} non extrait")
 
