@@ -13,6 +13,8 @@
 - stapler
 - python-pandas
 - hdf5
+- imagemagick (convert pdf to image)
+- ghostscript (imagemagick pdf support)
 
 ## Installation
 
