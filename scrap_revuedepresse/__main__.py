@@ -149,8 +149,8 @@ def parse_args():
     parser = argparse.ArgumentParser(description='Scraper revuedepresse.')
     parser.add_argument('--debug', help="Display debugging information", action="store_const", dest="loglevel", const=logging.DEBUG, default=logging.INFO)
     parser.add_argument('-f', '--file', help="File containing the urls to parse (optional, liste_journaux.csv by default)", type=str)
-    parser.add_argument('-t', '--test', dest='test', action='store_true')
-    parser.add_argument('-i', '--international', dest='international', action='store_true')
+    parser.add_argument('-t', '--test', help="Temporary activates all the scrapers", dest='test', action='store_true')
+    parser.add_argument('-i', '--international', help="International version, use the liste_journaux_international.csv file", dest='international', action='store_true')
     parser.set_defaults(test=False, international=False)
     args = parser.parse_args()
 
