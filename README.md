@@ -1,5 +1,7 @@
 # scrap_revuedepresse
 
+Scrap newspaper covers from a variety of sources.
+
 ## Requirements
 
 - python-lxml
@@ -26,6 +28,8 @@ python setup.py install
 
 ```
 scrap_revuedepresse
+scrap_revuedepresse --international
+scrap_revuedepresse -f custom.csv
 ```
 
 ## Help
