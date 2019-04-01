@@ -66,7 +66,7 @@ def main():
             méthode = i['Méthode']
             url = i['URL']
             titre = i['Titre']
-            filename = f"{directory}{str(ordre).zfill(2)}_{titre.replace(' ', '')}.jpg"
+            filename = f"{directory}{str(ordre).zfill(2)}_{titre.replace(' ', '_')}.jpg"
 
             if not os.path.exists(os.path.dirname(filename)):
                 try:
