@@ -40,7 +40,7 @@ def main():
         jour = datetime.datetime.now().strftime("%A")
     logger.debug(f"Aujourd'hui : {auj}")
     logger.debug(f"Jour : {jour}")
-    directory = f"{auj}/"
+    directory = f"Images/{auj}/"
 
     if file is None:
         if international:

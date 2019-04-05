@@ -1,0 +1,10 @@
+[Unit]
+Description=Run the scrap_revuedepresse script daily
+
+[Timer]
+#OnBootSec=15min
+#OnUnitActiveSec=1d
+OnCalendar=*-*-* 07:02:00
+
+[Install]
+WantedBy=timers.target
