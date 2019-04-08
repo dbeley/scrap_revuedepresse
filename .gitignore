@@ -5,3 +5,6 @@ venv/
 __pycache__/
 geckodriver.log
 tags
+Images/
+config_imgur
+praw.ini

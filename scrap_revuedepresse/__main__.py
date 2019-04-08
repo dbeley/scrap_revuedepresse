@@ -45,7 +45,7 @@ def main():
     if file is None:
         if international:
             io = pkg_resources.resource_stream(__name__, "liste_journaux_internationaux.csv")
-            directory = f"{auj}_international/"
+            directory = f"Images/{auj}_international/"
         else:
             io = pkg_resources.resource_stream(__name__, "liste_journaux.csv")
         utf8_reader = codecs.getreader("utf-8")

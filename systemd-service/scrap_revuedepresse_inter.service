@@ -4,7 +4,7 @@ Description=scrap revuedepresse
 [Service]
 Type=oneshot
 WorkingDirectory=%h/Documents/scrap_revuedepresse
-ExecStart=/usr/bin/scrap_revuedepresse
+ExecStart=/usr/bin/scrap_revuedepresse --international
 
 [Install]
 WantedBy=multi-user.target
