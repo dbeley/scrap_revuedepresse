@@ -1,6 +1,5 @@
 Méthode,Titre,URL,lundi,mardi,mercredi,jeudi,vendredi,samedi,dimanche,test
 canardenchaine,Le Canard Enchaîné,https://www.lecanardenchaine.fr/,0,0,1,0,0,0,0,1
-# revue2presse,Le Monde,http://www.revue2presse.fr/newspaper/lemonde/lemonde-cover.jpg,1,1,1,1,1,1,0,1
 lemonde,Le Monde,https://journal.lemonde.fr,1,1,1,1,1,1,0,1
 epresse,Libération,https://www.epresse.fr/quotidien/liberation,1,1,1,1,1,1,0,1
 epresse,Le Figaro,https://www.epresse.fr/quotidien/le-figaro,1,1,1,1,1,1,0,1
@@ -15,13 +14,13 @@ epresse,Challenges,https://www.epresse.fr/magazine/challenges,0,0,0,1,0,0,0,1
 epresse,Le Point,https://www.epresse.fr/magazine/le-point,0,0,0,1,0,0,0,1
 epresse,Politis,https://www.epresse.fr/magazine/politis,0,0,0,1,0,0,0,1
 leun,Le 1,https://le1hebdo.fr/img/decouvrir/11.jpg,0,0,0,1,0,0,0,1
-epresse,L'Humanité,https://www.epresse.fr/quotidien/l-humanite,1,1,1,1,1,0,0,1
 epresse,Les Échos,https://www.epresse.fr/quotidien/les-echos,1,1,1,1,1,0,0,1
 # 20m,20 minutes,VIDE,1,1,1,1,1,0,0,1
 # cnews,CNEWS,VIDE,1,1,1,1,1,0,0,1
 epresse,Aujourd'hui en France,https://www.epresse.fr/quotidien/aujourd-hui-en-france,1,1,1,1,1,1,1,1
 epresse,Le Parisien,https://www.epresse.fr/quotidien/le-parisien,1,1,1,1,1,1,1,1
 epresse,La Croix,https://www.epresse.fr/quotidien/la-croix,1,1,1,1,1,1,0,1
+epresse,L'Humanité,https://www.epresse.fr/quotidien/l-humanite,1,1,1,1,1,0,0,1
 epresse,L'Opinion,https://www.epresse.fr/quotidien/l-opinion,1,1,1,1,1,0,0,1
 epresse,Ouest France,https://www.epresse.fr/quotidien/ouest-france,1,1,1,1,1,1,0,1
 epresse,Sud Ouest,https://www.epresse.fr/quotidien/sud-ouest/edition-bordeaux-rive-gauche,1,1,1,1,1,1,0,1
@@ -51,7 +50,6 @@ epresse,Presse Océan,https://www.epresse.fr/quotidien/presse-ocean,1,1,1,1,1,1,
 epresse,L’Union Ardennes,https://www.epresse.fr/quotidien/l-union-ardennes/reims,1,1,1,1,1,1,1,1
 # epresse,La Marne (Meaux),https://www.epresse.fr/magazine/la-marne/meaux/,0,0,0,0,0,0,0,1
 # epresse,La Marne (Marne-la-Vallée),https://www.epresse.fr/magazine/la-marne/marne-la-vallee/,0,0,0,0,0,0,0,1
-# journauxfr,Jeune Afrique,https://www.journaux.fr/jeune-afrique-_news-opinions-politique_actualite_85540.html,0,0,0,0,0,0,0,1
 jeuneafrique,Jeune Afrique,https://kiosque.jeuneafrique.com/catalog/,1,0,0,0,0,0,0,1
 epresse,Journal de l'île,https://www.epresse.fr/quotidien/journal-de-l-ile/le-journal-de-l-ile-de-la-reunion,1,1,1,1,1,1,1,1
 epresse,France-Guyane,https://www.epresse.fr/quotidien/france-guyane,1,1,1,1,1,1,0,1
