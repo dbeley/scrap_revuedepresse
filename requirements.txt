@@ -5,6 +5,7 @@ chardet==3.0.4
 idna==2.8
 lxml==4.3.1
 numpy==1.16.3
+opencv-python==4.1.0.25
 pandas==0.24.2
 python-dateutil==2.8.0
 pytz==2019.1
@@ -13,4 +14,4 @@ scrap-revuedepresse==0.0.1
 selenium==4.0.0a1
 six==1.12.0
 soupsieve==1.8
-urllib3==1.24.1
+urllib3==1.25.1
