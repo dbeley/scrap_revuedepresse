@@ -31,6 +31,6 @@ setuptools.setup(
             'lxml',
             'pandas',
             'selenium',
-            'opencv',
+            'opencv-python',
             ]
         )
