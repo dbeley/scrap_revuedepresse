@@ -7,7 +7,9 @@ WorkingDirectory=%h/Documents/scrap_revuedepresse
 # Without virtualenv
 # ExecStart=/usr/bin/scrap_revuedepresse --international
 # With virtualenv
-ExecStart=%h/Documents/scrap_revuedepresse/venv/bin/scrap_revuedepresse --international
+# ExecStart=%h/Documents/scrap_revuedepresse/venv/bin/scrap_revuedepresse --international
+# With pipenv
+ExecStart=/usr/bin/pipenv run scrap_revuedepresse --international
 
 [Install]
 WantedBy=multi-user.target
