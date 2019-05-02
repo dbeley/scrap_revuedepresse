@@ -21,15 +21,15 @@ Scrap newspaper covers from a variety of sources.
 ## Installation
 
 ```
-python setup.py install
+pipenv install '-e .'
 ```
 
 ## Usage
 
 ```
-scrap_revuedepresse
-scrap_revuedepresse --international
-scrap_revuedepresse -f custom.csv
+pipenv run scrap_revuedepresse
+pipenv run scrap_revuedepresse --international
+pipenv run scrap_revuedepresse -f custom.csv
 ```
 
 ## Help
