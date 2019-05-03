@@ -1,13 +1,12 @@
 import time
 import datetime
-import os
-import errno
 import logging
 import locale
 import argparse
 import pkg_resources
 import codecs
 import pandas as pd
+from pathlib import Path
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 
@@ -68,12 +67,7 @@ def main():
             titre = i['Titre']
             filename = f"{directory}{str(ordre).zfill(2)}_{titre.replace(' ', '_')}.jpg"
 
-            if not os.path.exists(os.path.dirname(filename)):
-                try:
-                    os.makedirs(os.path.dirname(filename))
-                except OSError as exc:
-                    if exc.errno != errno.EEXIST:
-                        raise
+            Path(filename).mkdir(parents=True, exist_ok=True)
 
             logger.debug(f"{méthode} : {url} vers {filename}")
             if méthode == "revue2presse":
