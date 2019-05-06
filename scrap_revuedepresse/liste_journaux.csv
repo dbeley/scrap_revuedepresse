@@ -24,32 +24,33 @@ epresse,L'Humanité,https://www.epresse.fr/quotidien/l-humanite,1,1,1,1,1,0,0,1
 epresse,L'Opinion,https://www.epresse.fr/quotidien/l-opinion,1,1,1,1,1,0,0,1
 epresse,Ouest France,https://www.epresse.fr/quotidien/ouest-france,1,1,1,1,1,1,0,1
 epresse,Sud Ouest,https://www.epresse.fr/quotidien/sud-ouest/edition-bordeaux-rive-gauche,1,1,1,1,1,1,0,1
-epresse,La Voix du Nord,https://www.epresse.fr/quotidien/la-voix-du-nord/lille,1,1,1,1,1,1,1,1
-epresse,Le Dauphiné Libéré,https://www.epresse.fr/quotidien/le-dauphine-libere/montelimar-drome-provencale,1,1,1,1,1,1,1,1
 epresse,Le Télégramme,https://www.epresse.fr/quotidien/le-telegramme/quimper,1,1,1,1,1,1,1,1
-epresse,Le Progrès,https://www.epresse.fr/quotidien/le-progres/edition-de-lyon-villeurbanne-caluire,1,1,1,1,1,1,1,1
-epresse,La Montagne,https://www.epresse.fr/quotidien/la-montagne/metropole/,1,1,1,1,1,1,1,1
-epresse,La Nouvelle République,https://www.epresse.fr/quotidien/la-nouvelle-republique/indre-et-loire-tours-et-agglo,1,1,1,1,1,1,0,1
-epresse,Dernières Nouvelles d’Alsace,https://www.epresse.fr/quotidien/les-dernieres-nouvelles-d-alsace/edition-de-strasbourg,1,1,1,1,1,1,1,1
-epresse,La Dépêche du Midi,https://www.epresse.fr/quotidien/la-depeche-du-midi/edition-toulouse,1,1,1,1,1,1,1,1
-epresse,L'Est Républicain,https://www.epresse.fr/quotidien/l-est-republicain/edition-de-besancon,1,1,1,1,1,1,1,1
-epresse,Midi Libre,https://www.epresse.fr/quotidien/midi-libre/edition-montpellier,1,1,1,1,1,1,1,1
-epresse,La Provence,https://www.epresse.fr/quotidien/la-provence/la-provence-edition-marseille,1,1,1,1,1,1,1,1
-epresse,Le Courrier de l’Ouest,https://www.epresse.fr/quotidien/le-courrier-de-l-ouest,1,1,1,1,1,1,1,1
-# revue2presse,Nice-matin,http://www.revue2presse.fr/newspaper/nicematin/nicematin-nice-cover.jpg,1,1,1,1,1,1,1,1
-epresse,L’Alsace,https://www.epresse.fr/quotidien/l-alsace/edition-mulhouse,1,1,1,1,1,1,1,1
-epresse,Courrier picard,https://www.epresse.fr/quotidien/courrier-picard/amiens,1,1,1,1,1,1,1,1
-epresse,La Marseillaise,https://www.epresse.fr/quotidien/la-marseillaise,1,1,1,1,1,1,0,1
-# revue2presse,Var-matin,http://www.revue2presse.fr/newspaper/varmatin/varmatin-toulon-cover.jpg,1,1,1,1,1,1,1,1
-epresse,L'Indépendant,https://www.epresse.fr/quotidien/independant/edition-perpignan,1,1,1,1,1,1,1,1
-epresse,Le Journal du Centre,https://www.epresse.fr/quotidien/le-jdc,1,1,1,1,1,1,1,1
-epresse,Le Berry Républicain,https://www.epresse.fr/quotidien/le-berry,1,1,1,1,1,1,1,1
-epresse,Le Populaire du Centre,https://www.epresse.fr/quotidien/le-populaire,1,1,1,1,1,1,1,1
-epresse,L'Yonne Républicaine,https://www.epresse.fr/quotidien/l-yonne/nord/,1,1,1,1,1,1,0,1
 epresse,Presse Océan,https://www.epresse.fr/quotidien/presse-ocean,1,1,1,1,1,1,1,1
+epresse,La Voix du Nord,https://www.epresse.fr/quotidien/la-voix-du-nord/lille,1,1,1,1,1,1,1,1
+epresse,Courrier picard,https://www.epresse.fr/quotidien/courrier-picard/amiens,1,1,1,1,1,1,1,1
 epresse,L’Union Ardennes,https://www.epresse.fr/quotidien/l-union-ardennes/reims,1,1,1,1,1,1,1,1
+epresse,Dernières Nouvelles d’Alsace,https://www.epresse.fr/quotidien/les-dernieres-nouvelles-d-alsace/edition-de-strasbourg,1,1,1,1,1,1,1,1
+epresse,L’Alsace,https://www.epresse.fr/quotidien/l-alsace/edition-mulhouse,1,1,1,1,1,1,1,1
+epresse,L'Est Républicain,https://www.epresse.fr/quotidien/l-est-republicain/edition-de-besancon,1,1,1,1,1,1,1,1
+epresse,Le Progrès,https://www.epresse.fr/quotidien/le-progres/edition-de-lyon-villeurbanne-caluire,1,1,1,1,1,1,1,1
+epresse,Le Dauphiné Libéré,https://www.epresse.fr/quotidien/le-dauphine-libere/montelimar-drome-provencale,1,1,1,1,1,1,1,1
+epresse,La Montagne,https://www.epresse.fr/quotidien/la-montagne/metropole/,1,1,1,1,1,1,1,1
+epresse,La Provence,https://www.epresse.fr/quotidien/la-provence/la-provence-edition-marseille,1,1,1,1,1,1,1,1
+epresse,La Marseillaise,https://www.epresse.fr/quotidien/la-marseillaise,1,1,1,1,1,1,0,1
+revue2presse,Nice-matin,http://www.revue2presse.fr/newspaper/nicematin/nicematin-nice-cover.jpg,1,1,1,1,1,1,1,1
+epresse,L'Indépendant,https://www.epresse.fr/quotidien/independant/edition-perpignan,1,1,1,1,1,1,1,1
+epresse,Midi Libre,https://www.epresse.fr/quotidien/midi-libre/edition-montpellier,1,1,1,1,1,1,1,1
+epresse,La Dépêche du Midi,https://www.epresse.fr/quotidien/la-depeche-du-midi/edition-toulouse,1,1,1,1,1,1,1,1
+epresse,Le Courrier de l’Ouest,https://www.epresse.fr/quotidien/le-courrier-de-l-ouest,1,1,1,1,1,1,1,1
+epresse,La Nouvelle République,https://www.epresse.fr/quotidien/la-nouvelle-republique/indre-et-loire-tours-et-agglo,1,1,1,1,1,1,0,1
+epresse,Le Populaire du Centre,https://www.epresse.fr/quotidien/le-populaire,1,1,1,1,1,1,1,1
+epresse,L'Echo Républicain,https://www.epresse.fr/quotidien/l-echo-republicain/,1,1,1,1,1,1,1,1
+epresse,Le Berry Républicain,https://www.epresse.fr/quotidien/le-berry,1,1,1,1,1,1,1,1
+epresse,Le Journal du Centre,https://www.epresse.fr/quotidien/le-jdc,1,1,1,1,1,1,1,1
+epresse,L'Yonne Républicaine,https://www.epresse.fr/quotidien/l-yonne/nord/,1,1,1,1,1,1,0,1
 # epresse,La Marne (Meaux),https://www.epresse.fr/magazine/la-marne/meaux/,0,0,0,0,0,0,0,1
 # epresse,La Marne (Marne-la-Vallée),https://www.epresse.fr/magazine/la-marne/marne-la-vallee/,0,0,0,0,0,0,0,1
+# revue2presse,Var-matin,http://www.revue2presse.fr/newspaper/varmatin/varmatin-toulon-cover.jpg,1,1,1,1,1,1,1,1
 jeuneafrique,Jeune Afrique,https://kiosque.jeuneafrique.com/catalog/,1,0,0,0,0,0,0,1
 epresse,Journal de l'île,https://www.epresse.fr/quotidien/journal-de-l-ile/le-journal-de-l-ile-de-la-reunion,1,1,1,1,1,1,1,1
 epresse,France-Guyane,https://www.epresse.fr/quotidien/france-guyane,1,1,1,1,1,1,0,1
