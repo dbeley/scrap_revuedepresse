@@ -67,7 +67,7 @@ def main():
             titre = i['Titre']
             filename = f"{directory}{str(ordre).zfill(2)}_{titre.replace(' ', '_')}.jpg"
 
-            Path(filename).mkdir(parents=True, exist_ok=True)
+            Path(directory).mkdir(parents=True, exist_ok=True)
 
             logger.debug(f"{méthode} : {url} vers {filename}")
             if méthode == "revue2presse":
