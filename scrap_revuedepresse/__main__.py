@@ -25,11 +25,11 @@ from .scrapers.jeuneafrique import scrap_jeuneafrique
 
 logger = logging.getLogger()
 temps_debut = time.time()
+locale.setlocale(locale.LC_TIME, "fr_FR.utf-8")
 
 
 def main():
     args = parse_args()
-    locale.setlocale(locale.LC_TIME, "fr_FR.utf-8")
     file = args.file
     international = args.international
     auj = datetime.datetime.now().strftime("%Y-%m-%d")
@@ -39,8 +39,8 @@ def main():
         jour = datetime.datetime.now().strftime("%A")
     logger.debug(f"Aujourd'hui : {auj}")
     logger.debug(f"Jour : {jour}")
-    directory = f"Images/{auj}/"
 
+    directory = f"Images/{auj}/"
     if file is None:
         if international:
             io = pkg_resources.resource_stream(__name__, "liste_journaux_internationaux.csv")
@@ -49,8 +49,12 @@ def main():
             io = pkg_resources.resource_stream(__name__, "liste_journaux.csv")
         utf8_reader = codecs.getreader("utf-8")
         file = utf8_reader(io)
-    df = pd.read_csv(file, sep=',', comment='#')
-    dict = df.to_dict(orient='records')
+    try:
+        df = pd.read_csv(file, sep=',', comment='#')
+        dict = df.to_dict(orient='records')
+    except Exception as e:
+        logger.error(f"Erreur lecture {file} : {e}")
+        exit()
 
     # Lancement de selenium
     options = Options()
@@ -61,7 +65,7 @@ def main():
     ordre = 0
     for i in dict:
         if i[jour] == 1:
-            ordre = ordre + 1
+            ordre += 1
             méthode = i['Méthode']
             url = i['URL']
             titre = i['Titre']
@@ -69,7 +73,7 @@ def main():
 
             Path(directory).mkdir(parents=True, exist_ok=True)
 
-            logger.debug(f"{méthode} : {url} vers {filename}")
+            logger.info(f"{méthode} : {url} vers {filename}")
             if méthode == "revue2presse":
                 try:
                     scrap_revue2presse(url, filename)

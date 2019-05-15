@@ -9,7 +9,7 @@ setuptools.setup(
         version=scrap_revuedepresse.__version__,
         author="dbeley",
         author_email="dbeley@protonmail.com",
-        description="Scrap the content of the revuedepreses website",
+        description="Scrap newspaper covers from a variety of sources",
         long_description=long_description,
         long_description_content_type="text/markdown",
         url="https://github.com/dbeley/scrap_revuedepresse",
