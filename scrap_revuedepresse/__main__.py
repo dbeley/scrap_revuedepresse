@@ -30,33 +30,33 @@ locale.setlocale(locale.LC_TIME, "fr_FR.utf-8")
 
 def main():
     args = parse_args()
-    file = args.file
-    international = args.international
     auj = datetime.datetime.now().strftime("%Y-%m-%d")
     if args.test:
         jour = "test"
     else:
         jour = datetime.datetime.now().strftime("%A")
-    logger.debug(f"Aujourd'hui : {auj}")
-    logger.debug(f"Jour : {jour}")
+    logger.debug("Aujourd'hui : %s", auj)
+    logger.debug("Jour : %s", jour)
 
     directory = f"Images/{auj}/"
-    if file is None:
-        if international:
+    if args.file is None:
+        if args.international:
             io = pkg_resources.resource_stream(__name__, "liste_journaux_internationaux.csv")
             directory = f"Images/{auj}_international/"
         else:
             io = pkg_resources.resource_stream(__name__, "liste_journaux.csv")
         utf8_reader = codecs.getreader("utf-8")
         file = utf8_reader(io)
+    else:
+        file = args.file
     try:
         df = pd.read_csv(file, sep=',', comment='#')
         dict = df.to_dict(orient='records')
     except Exception as e:
-        logger.error(f"Erreur lecture {file} : {e}")
+        logger.error("Erreur lecture %s : %s", args.file, e)
         exit()
 
-    # Lancement de selenium
+    # Start selenium
     options = Options()
     options.headless = True
     browser = webdriver.Firefox(options=options)
@@ -73,71 +73,71 @@ def main():
 
             Path(directory).mkdir(parents=True, exist_ok=True)
 
-            logger.info(f"{méthode} : {url} vers {filename}")
+            logger.info("%s : %s vers %s", méthode, url, filename)
             if méthode == "revue2presse":
                 try:
                     scrap_revue2presse(url, filename)
                 except Exception as e:
-                    logger.error(f"{titre} - {méthode} : {str(e)}")
+                    logger.error("%s - %s : %s", titre, méthode, str(e))
             elif méthode == "epresse":
                 try:
                     scrap_epresse(url, filename, auj)
                 except Exception as e:
-                    logger.error(f"{titre} - {méthode} : {str(e)}")
+                    logger.error("%s - %s : %s", titre, méthode, str(e))
             elif méthode == "journauxfr":
                 try:
                     scrap_journauxfr(url, filename)
                 except Exception as e:
-                    logger.error(f"{titre} - {méthode} : {str(e)}")
+                    logger.error("%s - %s : %s", titre, méthode, str(e))
             elif méthode == "kiosko":
                 try:
                     scrap_kiosko(url, filename)
                 except Exception as e:
-                    logger.error(f"{titre} - {méthode} : {str(e)}")
+                    logger.error("%s - %s : %s", titre, méthode, str(e))
             elif méthode == "lemonde":
                 try:
                     scrap_lemonde(url, filename, browser)
                 except Exception as e:
-                    logger.error(f"{titre} - {méthode} : {str(e)}")
+                    logger.error("%s - %s : %s", titre, méthode, str(e))
             elif méthode == "cnews":
                 try:
                     scrap_cnews(filename, browser)
                 except Exception as e:
-                    logger.error(f"{titre} - {méthode} : {str(e)}")
+                    logger.error("%s - %s : %s", titre, méthode, str(e))
             elif méthode == "20m":
                 try:
                     scrap_vingtminutes(filename)
                 except Exception as e:
-                    logger.error(f"{titre} - {méthode} : {str(e)}")
+                    logger.error("%s - %s : %s", titre, méthode, str(e))
             elif méthode == "canardenchaine":
                 try:
                     scrap_canardenchaine(url, filename)
                 except Exception as e:
-                    logger.error(f"{titre} - {méthode} : {str(e)}")
+                    logger.error("%s - %s : %s", titre, méthode, str(e))
             elif méthode == "charliehebdo":
                 try:
                     scrap_charliehebdo(url, filename)
                 except Exception as e:
-                    logger.error(f"{titre} - {méthode} : {str(e)}")
+                    logger.error("%s - %s : %s", titre, méthode, str(e))
             elif méthode == "courrierinternational":
                 try:
                     scrap_courrierinternational(url, filename)
                 except Exception as e:
-                    logger.error(f"{titre} - {méthode} : {str(e)}")
+                    logger.error("%s - %s : %s", titre, méthode, str(e))
             elif méthode == "jeuneafrique":
                 try:
                     scrap_jeuneafrique(url, filename)
                 except Exception as e:
-                    logger.error(f"{titre} - {méthode} : {str(e)}")
+                    logger.error("%s - %s : %s", titre, méthode, str(e))
             elif méthode == "leun":
                 try:
                     scrap_leun(url, filename)
                 except Exception as e:
-                    logger.error(f"{titre} - {méthode} : {str(e)}")
+                    logger.error("%s - %s : %s", titre, méthode, str(e))
             else:
-                logger.error(f"{titre} : Méthode {méthode} non implémentée")
+                logger.error("%s : Méthode %s non implémentée", titre, méthode)
         else:
-            logger.debug(f"{i[jour]} : {i['Titre']} non extrait")
+            logger.debug("%s : %s non extrait", i[jour], i['Titre'])
 
     browser.quit()
     logger.debug("Runtime : %.2f seconds" % (time.time() - temps_debut))
