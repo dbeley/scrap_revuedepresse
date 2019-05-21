@@ -1,5 +1,5 @@
 [Unit]
-Description=scraping revuedepresse
+Description=scrap_revuedepresse.service
 
 [Service]
 Type=oneshot
