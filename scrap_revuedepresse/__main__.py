@@ -41,7 +41,9 @@ def main():
     directory = f"Images/{auj}/"
     if args.file is None:
         if args.international:
-            io = pkg_resources.resource_stream(__name__, "liste_journaux_internationaux.csv")
+            io = pkg_resources.resource_stream(
+                __name__, "liste_journaux_internationaux.csv"
+            )
             directory = f"Images/{auj}_international/"
         else:
             io = pkg_resources.resource_stream(__name__, "liste_journaux.csv")
@@ -50,8 +52,8 @@ def main():
     else:
         file = args.file
     try:
-        df = pd.read_csv(file, sep=',', comment='#')
-        dict = df.to_dict(orient='records')
+        df = pd.read_csv(file, sep=",", comment="#")
+        dict = df.to_dict(orient="records")
     except Exception as e:
         logger.error("Erreur lecture %s : %s", args.file, e)
         exit()
@@ -66,9 +68,9 @@ def main():
     for i in dict:
         if i[jour] == 1:
             ordre += 1
-            méthode = i['Méthode']
-            url = i['URL']
-            titre = i['Titre']
+            méthode = i["Méthode"]
+            url = i["URL"]
+            titre = i["Titre"]
             filename = f"{directory}{str(ordre).zfill(2)}_{titre.replace(' ', '_')}.jpg"
 
             Path(directory).mkdir(parents=True, exist_ok=True)
@@ -137,18 +139,42 @@ def main():
             else:
                 logger.error("%s : Méthode %s non implémentée", titre, méthode)
         else:
-            logger.debug("%s : %s non extrait", i[jour], i['Titre'])
+            logger.debug("%s : %s non extrait", i[jour], i["Titre"])
 
     browser.quit()
     logger.debug("Runtime : %.2f seconds" % (time.time() - temps_debut))
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description='Scraper revuedepresse.')
-    parser.add_argument('--debug', help="Display debugging information", action="store_const", dest="loglevel", const=logging.DEBUG, default=logging.INFO)
-    parser.add_argument('-f', '--file', help="File containing the urls to parse (optional, liste_journaux.csv by default)", type=str)
-    parser.add_argument('-t', '--test', help="Temporary activates all the scrapers", dest='test', action='store_true')
-    parser.add_argument('-i', '--international', help="International version, use the liste_journaux_international.csv file", dest='international', action='store_true')
+    parser = argparse.ArgumentParser(description="Scraper revuedepresse.")
+    parser.add_argument(
+        "--debug",
+        help="Display debugging information",
+        action="store_const",
+        dest="loglevel",
+        const=logging.DEBUG,
+        default=logging.INFO,
+    )
+    parser.add_argument(
+        "-f",
+        "--file",
+        help="File containing the urls to parse (optional, liste_journaux.csv by default)",
+        type=str,
+    )
+    parser.add_argument(
+        "-t",
+        "--test",
+        help="Temporary activates all the scrapers",
+        dest="test",
+        action="store_true",
+    )
+    parser.add_argument(
+        "-i",
+        "--international",
+        help="International version, use the liste_journaux_international.csv file",
+        dest="international",
+        action="store_true",
+    )
     parser.set_defaults(test=False, international=False)
     args = parser.parse_args()
 
@@ -156,5 +182,5 @@ def parse_args():
     return args
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
