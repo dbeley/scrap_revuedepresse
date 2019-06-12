@@ -1,5 +1,7 @@
 # scrap_revuedepresse
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/6a62746ff508448aadf4eb2c43dfb53e)](https://app.codacy.com/app/dbeley/scrap_revuedepresse?utm_source=github.com&utm_medium=referral&utm_content=dbeley/scrap_revuedepresse&utm_campaign=Badge_Grade_Dashboard)
+
 Scrap newspaper covers from a variety of sources.
 
 ## Requirements
