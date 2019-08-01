@@ -146,7 +146,7 @@ def main():
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="Scraper revuedepresse.")
+    parser = argparse.ArgumentParser(description="Extract newspaper covers.")
     parser.add_argument(
         "--debug",
         help="Display debugging information",
