@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-extract newspapers covers
+extract newspapers covers from different sources
 """
 
 __version__ = "1.0"

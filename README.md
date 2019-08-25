@@ -50,6 +50,16 @@ scrap_revuedepresse --international
 scrap_revuedepresse -f custom.csv
 ```
 
+### As a Systemd Service
+
+```
+cp systemd-service/* ~/.config/systemd/user
+systemctl --user daemon-reload
+systemctl --user enable --now scrap_revuedepresse.timer
+systemctl --user enable --now scrap_revuedepresse_inter.timer
+systemctl --user start scrap_revuedepresse
+```
+
 ## Help
 
 ```
@@ -59,14 +69,14 @@ scrap_revuedepresse -h
 ```
 usage: scrap_revuedepresse [-h] [--debug] [-f FILE] [-t] [-i]
 
-Extract newspaper covers.
+Scrap newspapers covers for the revuedepresse bot.
 
 optional arguments:
   -h, --help            show this help message and exit
   --debug               Display debugging information
   -f FILE, --file FILE  File containing the urls to parse (optional,
                         liste_journaux.csv by default)
-  -t, --test            Temporary activates all the scrapers
+  -t, --test            Temporarily activates all the scrapers
   -i, --international   International version, use the
                         liste_journaux_international.csv file
 ```

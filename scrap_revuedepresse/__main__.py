@@ -147,7 +147,9 @@ def main():
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="Extract newspaper covers.")
+    parser = argparse.ArgumentParser(
+        description="Scrap newspapers covers for the revuedepresse bot."
+    )
     parser.add_argument(
         "--debug",
         help="Display debugging information",
@@ -165,7 +167,7 @@ def parse_args():
     parser.add_argument(
         "-t",
         "--test",
-        help="Temporary activates all the scrapers",
+        help="Temporarily activates all the scrapers",
         dest="test",
         action="store_true",
     )
