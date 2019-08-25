@@ -141,6 +141,7 @@ def main():
         else:
             logger.debug("%s : %s non extrait", i[jour], i["Titre"])
 
+    browser.close()
     browser.quit()
     logger.debug("Runtime : %.2f seconds" % (time.time() - temps_debut))
 
