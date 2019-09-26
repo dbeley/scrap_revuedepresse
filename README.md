@@ -22,7 +22,7 @@ Python librairies :
 
 - lxml
 - urllib3
-- bs4
+- beautifulsoup4
 - requests
 - pandas
 - selenium

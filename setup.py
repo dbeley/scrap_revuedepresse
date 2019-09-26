@@ -25,7 +25,7 @@ setuptools.setup(
         "Operating System :: POSIX :: Linux",
     ],
     install_requires=[
-        "bs4",
+        "beautifulsoup4",
         "urllib3",
         "requests",
         "lxml",
